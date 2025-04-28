@@ -27,7 +27,7 @@ Total work = O(|V|dlog<sub>d</sub>|V| + |E|log<sub>d</sub>|V|)
 
 
 - **1d.**
-
+To get a value of d that yeilds a runtime of O(|E|) 
 
 - **2a.**
 APSP(0,0,0) = 0

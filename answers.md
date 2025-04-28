@@ -9,7 +9,7 @@
 
 
 - **1a.**
-log<<sub>d>n
+log<sub>d</sub>n
 
 - **1b.**
 

@@ -12,9 +12,11 @@
 log<sub>d</sub>n
 
 - **1b.**
-delete-min: O(dlog<sub>d</sub>n
+delete-min: O(dlog<sub>d</sub>n)
+insert: O(log<sub>d</sub>n)
 
 - **1c.**
+in this case, <abs>V
 
 - **1d.**
 

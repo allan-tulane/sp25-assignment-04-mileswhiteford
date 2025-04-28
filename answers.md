@@ -12,7 +12,7 @@
 log<sub>d</sub>n
 
 - **1b.**
-
+delete-min: O(dlog<sub>d</sub>n
 
 - **1c.**
 

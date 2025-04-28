@@ -1,7 +1,7 @@
 # CMPS 2200 Assignment 5
 ## Answers
 
-**Name:**_________________________
+**Name:** Miles Whiteford
 
 
 
@@ -9,7 +9,7 @@
 
 
 - **1a.**
-
+log<sub>d<sup>n
 
 - **1b.**
 

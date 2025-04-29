@@ -73,7 +73,7 @@ Since there are |V|^3 possible inputs for APSP(i,j,k), checking each subproblem 
 
 - **2e.**
 Johnson's: O(|V| * |E|log<sub>d</sub>|E|)
-Our dynamic programming algorithm is preferable when |E|log<sub>d</sub>|E| >> |V|^2
+Our dynamic programming algorithm is preferable when |E|log<sub>d</sub>|E| > |V|^2
 
 
 - **3a.**

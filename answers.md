@@ -27,41 +27,41 @@ Total work = O(|V|dlog<sub>d</sub>|V| + |E|log<sub>d</sub>|V|)
 
 
 - **1d.**
-To get a value of d that yeilds a runtime of O(|E|) 
+To get a value of d that yeilds a runtime of O(|E|), we must be a d in which d = |E|/|V|, meaning that the two are balanced. With the given information, this can be rewritten as $d = |V|^{1+\epsilon} / |V|$, which can be simplied to $d = |V|^{\epsilon}$. This is our answer.
 
 - **2a.**
 APSP(0,0,0) = 0
 APSP(0,0,1) = 0
 APSP(0,0,2) = 0
-APSP(0,1,0) = -2
+APSP(0,1,0) = n/a
 APSP(0,1,1) = -2
 APSP(0,1,2) = -2
-APSP(0,2,0) = 2
-APSP(0,2,1) = -1
+APSP(0,2,0) = n/a
+APSP(0,2,1) = 2
 APSP(0,2,2) = -1
 
-APSP(1,0,0) = -2
+APSP(1,0,0) = n/a
 APSP(1,0,1) = -2
-APSP(1,0,2) = 
-APSP(1,1,0) = 
-APSP(1,1,1) = 
-APSP(1,1,2) = 
-APSP(1,2,0) = 
-APSP(1,2,1) = 
-APSP(1,2,2) = 
+APSP(1,0,2) = -2
+APSP(1,1,0) = 0
+APSP(1,1,1) = 0
+APSP(1,1,2) = 0
+APSP(1,2,0) = n/a
+APSP(1,2,1) = 1
+APSP(1,2,2) = 0
 
-APSP(2,0,0) =
-APSP(2,0,1) = 
-APSP(2,0,2) = 
-APSP(2,1,0) = 
-APSP(2,1,1) = 
-APSP(2,1,2) = 
-APSP(2,2,0) = 
-APSP(2,2,1) = 
-APSP(2,2,2) = 
+APSP(2,0,0) = n/a
+APSP(2,0,1) = 2
+APSP(2,0,2) = -1
+APSP(2,1,0) = n/a
+APSP(2,1,1) = 1
+APSP(2,1,2) = 0
+APSP(2,2,0) = 0
+APSP(2,2,1) = 0
+APSP(2,2,2) = 0
 
 - **2b.**
-
+Yes, there is a relationship. The shortest path from i to j using all vertices is either the shortest path without using vertex 2, or the path that goes through vertex 2 as an intermediate point.
 
 - **2c.**
   
@@ -72,8 +72,8 @@ APSP(i,j,k)= min(APSP(i,j,k-1), APSP(i,k,k-1)+ APSP(k,j,k-1))
 Since there are |V|^3 possible inputs for APSP(i,j,k), checking each subproblem from scratch once O(|V|^3)
 
 - **2e.**
-Johnson's: O(|E| * |V|log<sub>d</sub>|V|)
-Our dynamic programming algorithm is preferable when |V|log<sub>d</sub>|V| >> |E|^2
+Johnson's: O(|V| * |E|log<sub>d</sub>|E|)
+Our dynamic programming algorithm is preferable when |E|log<sub>d</sub>|E| >> |V|^2
 
 
 - **3a.**

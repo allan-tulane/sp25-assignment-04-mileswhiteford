@@ -27,7 +27,7 @@ Total work = O(|V|dlog<sub>d</sub>|V| + |E|log<sub>d</sub>|V|)
 
 
 - **1d.**
-To get a value of d that yeilds a runtime of O(|E|), we must be a d in which d = |E|/|V|, meaning that the two are balanced. With the given information, this can be rewritten as $d = |V|^{1+\epsilon} / |V|$, which can be simplied to $d = |V|^{\epsilon}$. This is our answer.
+To get a value of d that yeilds a runtime of O(|E|), we must be a d in which d = |E|/|V|, meaning that the two are balanced. With the given information, this can be rewritten as $d = |V|^{1+\epsilon} / |V|$, which can be simplied to $d = |V|$. This is our answer.
 
 - **2a.**
 APSP(0,0,0) = 0
